@@ -13,9 +13,9 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "types": [
-      "webpack-env",
       "vite/client",
-      "@types/jest"
+      "@types/jest",
+      "@types/node"
     ],
     "paths": {
       "@/*": [
