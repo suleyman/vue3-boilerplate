@@ -1,16 +1,10 @@
-import vue from "@vitejs/plugin-vue";
-import { defineConfig } from "vite";
-import { resolve } from "path";
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
-const viteConfig = defineConfig({
+export default defineConfig({
   plugins: [vue()],
   resolve: {
-    alias: {
-      "@": resolve(__dirname, "src"),
-      vue: "vue/dist/vue.esm-bundler.js"
-    }
-  }
-});
-
-export default viteConfig;
+    alias: [{ find: '@', replacement: '/src' }],
+  },
+})
