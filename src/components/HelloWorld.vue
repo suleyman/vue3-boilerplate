@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ message }}</h1>
+  <h1 data-test-id="message">{{ message }}</h1>
   <button type="button" @click="count++">count is: {{ count }}</button>
 </template>
 
@@ -7,6 +7,7 @@
 import { ref, onMounted, defineComponent, PropType } from "vue";
 
 export default defineComponent({
+  name: "HelloWorld",
   props: {
     message: {
       type: String as PropType<string>,
@@ -16,7 +17,7 @@ export default defineComponent({
   setup(props) {
     const count = ref(0);
     onMounted(() => {
-
+      console.log("mounted");
     });
 
     return {
