@@ -4,7 +4,7 @@
 </template>
 
 <script lang="ts">
-import { ref, onMounted, defineComponent, PropType } from "vue";
+import { ref, defineComponent, PropType } from "vue";
 
 export default defineComponent({
   name: "HelloWorld",
@@ -16,9 +16,6 @@ export default defineComponent({
   },
   setup(props) {
     const count = ref(0);
-    onMounted(() => {
-      console.log("mounted");
-    });
 
     return {
       count
