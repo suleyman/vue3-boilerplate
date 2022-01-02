@@ -1,7 +1,7 @@
 <template>
   <div class="users">
     <div v-for="user in users" :key="user.id">
-      {{ user.name }}
+      <span data-test-id="name">{{ user.name }}</span>
     </div>
   </div>
 </template>
