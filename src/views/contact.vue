@@ -1,5 +1,9 @@
 <template>
-  <div></div>
+  <div>
+    <router-link to="/">
+      Home Page
+    </router-link>
+  </div>
 </template>
 
 <script lang="ts">

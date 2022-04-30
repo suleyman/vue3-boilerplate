@@ -1,6 +1,9 @@
 <template>
   <img alt="Vue logo" src="@/assets/logo.png" />
   <HelloWorld message="Hello Vue 3 + TypeScript + Vite" />
+  <router-link to="/contact">
+    Contact Page
+  </router-link>
   <Users :users="users" />
 </template>
 
